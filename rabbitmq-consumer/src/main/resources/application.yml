@@ -1,0 +1,14 @@
+server:
+  port: 8002
+spring:
+  application:
+    name: rabbitmq-consumer
+  rabbitmq:
+    host: 127.0.0.1
+    listener:
+      concurrency: 10
+      max-concurrency: 20
+      prefetch: 5
+    password: guest
+    port: 5672
+    username: guest
